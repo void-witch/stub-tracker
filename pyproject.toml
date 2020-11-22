@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "stub-tracker"
+version = "0.1.0"
+description = "a handy tool to track which methods/functions still need stubs"
+authors = ["proxi <51172302+3n-k1@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.790"
+flake8 = "^3.8.4"
+pre-commit = "^2.9.0"
+isort = "^5.6.4"
+flake8-docstrings = "^1.5.0"
+flake8-quotes = "^3.2.0"
+flake8-spellcheck = { git = "https://github.com/MichaelAquilina/flake8-spellcheck.git", branch = "master" }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+line_length = 99
+multi_line_output = 5  # hanging grid grouped
+include_trailing_comma = true
+indent = 4

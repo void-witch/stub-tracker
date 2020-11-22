@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 99
+ignore = SC200,E241,W503
+whitelist = import os; os.path.join(os.path.dirname(os.path.abspath(__file__)), 'flake8spell_allow.txt')
+dictionaries = en_US,python,technical,django
+spellcheck-targets = comments
