@@ -27,11 +27,22 @@ stub-tracker is licensed under the mit/expat license. see the [license file](./L
 
 ## contributing
 
+this project uses [poetry](https://github.com/python-poetry/poetry) for development.
+just run `poetry install && poetry shell` to get started
+
 1. fork it (<https://github.com/3n-k1/stub-tracker/fork>)
 2. create your feature branch (`git checkout -b my-new-feature`)
 3. commit your changes (`git commit -am 'Add some feature'`)
 4. push to the branch (`git push origin my-new-feature`)
 5. create a new pull request
+
+make sure to run the unit tests and pre-commit before sending a pull request:
+
+```bash
+pre-commit install
+pre-commit run --all-files
+pytest
+```
 
 ## contributors
 
