@@ -24,6 +24,8 @@ repos:
     rev: 3.8.4
     hooks:
       - id: flake8
+        exclude: "test-scripts/|test-stubs/"
+        args: [ "--config=.flake8" ]
   - repo: local
     hooks:
       - id: mypy
@@ -31,4 +33,5 @@ repos:
         entry: mypy
         language: system
         types: [ python ]
+        exclude: "test-scripts/|test-stubs/"
         args: [ "--cache-dir=/dev/null", "--no-incremental" ]
