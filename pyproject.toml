@@ -16,6 +16,10 @@ isort = "^5.6.4"
 flake8-docstrings = "^1.5.0"
 flake8-quotes = "^3.2.0"
 flake8-spellcheck = { git = "https://github.com/MichaelAquilina/flake8-spellcheck.git", branch = "master" }
+pydocstyle = "^5.1.1"
+mccabe = "^0.6.1"
+pycodestyle = "^2.6.0"
+pyflakes = "^2.2.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
